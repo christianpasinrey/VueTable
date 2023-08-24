@@ -6,19 +6,11 @@
   font-weight: normal;
   width: 100vw;
 }
-
-a,
-.green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
+a{
+  padding: 0 10px;
+  border-radius: 5px;
 }
 
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
-}
 
 @media (min-width: 1024px) {
   body {

@@ -1,13 +1,15 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
+import { RouterLink, RouterView, useRoute } from 'vue-router'
 
+const route = useRoute();
 </script>
 
 <template>
   <header>
       <nav class="mavbar">
-        <RouterLink class="navbar-item" to="/">Homee</RouterLink>
+        <RouterLink class="navbar-item" to="/">Home</RouterLink>
         <RouterLink class="navbar-item" to="/table">Tabla</RouterLink>
+        <RouterLink class="navbar-item" to="/layouts">Plantillas</RouterLink>
       </nav>
   </header>
   <main id="main-app">
@@ -30,6 +32,20 @@ import { RouterLink, RouterView } from 'vue-router'
     font-weight: bold;
     font-size: 1.2rem;
     margin: 0 10px;
+  }
+
+  .navbar-item:hover{
+    text-decoration: none;
+    background-color: rgb(72, 72, 72);
+    color: rgb(255, 255, 255);
+    transition: all 0.5s ease-in-out;
+  }
+  .router-link-active
+  {
+    text-decoration: none;
+    background-color: rgb(72, 72, 72);
+    color: rgb(255, 255, 255);
+    transition: all 0.5s ease-in-out;
   }
 
   main{
