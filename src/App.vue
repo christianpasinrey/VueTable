@@ -6,7 +6,7 @@ import { RouterLink, RouterView } from 'vue-router'
 <template>
   <header>
       <nav class="mavbar">
-        <RouterLink class="navbar-item" to="/">Home</RouterLink>
+        <RouterLink class="navbar-item" to="/">Homee</RouterLink>
         <RouterLink class="navbar-item" to="/table">Tabla</RouterLink>
       </nav>
   </header>
